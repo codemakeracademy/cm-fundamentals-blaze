@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CM.Fundamentals\CM.Fundamentals.csproj" />
+    <ProjectReference Include="..\..\src\CM.Fundamentals\CM.Fundamentals.csproj" />
   </ItemGroup>
 
 </Project>

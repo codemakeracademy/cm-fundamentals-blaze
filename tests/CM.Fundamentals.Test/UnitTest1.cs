@@ -20,6 +20,23 @@ namespace CM.Fundamentals.Test
             Assert.Equal(10000, car.Odometer);
         }
 
+        [Theory]
+        [InlineData("Toyota", "Camry")]
+        [InlineData("Toyota", "Corolla")]
+        public void ShouldCreateCarWithArg(string make, string model)
+        {
+            Car car = new Car();
+            car.Make = make;
+            car.Model = model;
+            car.Year = 2021;
+            car.Odometer = 10000;
+
+            Assert.Equal(make, car.Make);
+            Assert.Equal(model, car.Model);
+            Assert.Equal(2021, car.Year);
+            Assert.Equal(10000, car.Odometer);
+        }
+
         [Fact]
         public void ShouldCreateCarSedan()
         {
